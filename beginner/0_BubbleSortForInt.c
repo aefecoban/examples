@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void BubbleSortForInt(int *pArray, int ArraySize);
 void BubbleSortPrint(int *pArray, int ArraySize);
