@@ -1,3 +1,3 @@
 # Examples
 
-* [C](../blob/master/examples/c/)
+* [C](https://github.com/aefecoban/examples/tree/master/beginner/c)
