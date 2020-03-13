@@ -1,1 +1,3 @@
-# examples
+# Examples
+
+* [C](.../examples/c/)
