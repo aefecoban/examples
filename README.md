@@ -1,3 +1,3 @@
 # Examples
 
-* [C](.../examples/c/)
+* [C](../blob/master/examples/c/)
