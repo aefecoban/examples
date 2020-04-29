@@ -1,5 +1,15 @@
 # Contents
 
+## C Pointer
+
+```c
+int main() {
+    int Array[10] = {99, 32, 53, 74, 123, 6, 3, 2, 9, 10};
+    int ArraySize = sizeof(Array)/sizeof(Array[0]);
+    int *pArray = Array; //This is pointer
+}
+```
+
 ### 0_BubbleSortForInt.c
 * [Pointer](https://github.com/aefecoban/examples/blob/ce3948c3c415a6cb556106a25e38921beedb395f/beginner/c/0_BubbleSortForInt.c#L11)
 * [Function](https://github.com/aefecoban/examples/blob/ce3948c3c415a6cb556106a25e38921beedb395f/beginner/c/0_BubbleSortForInt.c#L20-L56)
