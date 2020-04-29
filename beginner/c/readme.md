@@ -1,12 +1,24 @@
 # Contents
 
-## C Pointer
+## C Pointers
+
+Array:
 
 ```c
 int main() {
     int Array[10] = {99, 32, 53, 74, 123, 6, 3, 2, 9, 10};
     int ArraySize = sizeof(Array)/sizeof(Array[0]);
-    int *pArray = Array; //This is pointer
+    int *pArray = Array; //This is pointer. The variable address (Array's address) is kept in this variable.
+}
+```
+
+Int:
+
+```c
+int main() {
+    int Array[10] = {99, 32, 53, 74, 123, 6, 3, 2, 9, 10};
+    int ArraySize = sizeof(Array)/sizeof(Array[0]);
+    int *pArray = &ArraySize; //This is pointer. The variable address (Array's address) is kept in this variable.
 }
 ```
 
