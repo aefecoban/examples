@@ -1,0 +1,35 @@
+@keyframes loading {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.button{
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: rgb(170, 50, 40);
+    position: relative;
+}
+
+.button .loading{
+    width: 30px;
+    height: 30px;
+    border: 2px solid transparent;
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: loading 750ms infinite linear;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+}
