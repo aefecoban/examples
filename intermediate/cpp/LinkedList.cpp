@@ -35,17 +35,16 @@ class LinkedList{
                 return;
             }
 
-            this->Length = 0;
             LinkedListNode<T>* Node = this->Head;
             while (Node != nullptr)
             {
-                this->Length++;
                 if(Node->Next == nullptr){
                     Node->Next = new LinkedListNode<T>(value);
                     break;
                 }
                 Node = Node->Next;
             }
+            this->Length++;
         }
 
         void ForEach(void (*callback)(T)){
@@ -59,5 +58,19 @@ class LinkedList{
                 callback(Node->Value);
                 Node = Node->Next;
             }
+        }
+
+        void Clear(){
+            while (Head)
+            {
+                LinkedListNode<T>* pHead = this->Head;
+                this->Head =this->Head->Next;
+                delete pHead;
+            }
+            this->Length = 0;
+        }
+
+        ~LinkedList(){
+            this->Clear();
         }
 };
